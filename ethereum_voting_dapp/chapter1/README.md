@@ -1,6 +1,6 @@
 # Setting up in-memory blockchain using Ganache
 
-Install/update npm to the latest version
+Install/update npm to latest version
 ```bash
 sudo npm install -g n
 ```
@@ -16,11 +16,11 @@ Install ganache-cli and web3
 npm install ganache-cli web3@1.2.6
 ```
 
-Start the Ganache in-memory blockchain
+Start Ganache in-memory blockchain
 ```bash
 node_modules/.bin/ganache-cli
 ```
-This should give you 10 accounts to use.
+This should give 10 accounts to use
 
 
 # Voting Contract
@@ -30,13 +30,14 @@ Install solc
 npm install solc@0.6.4
 ```
 
-Compile the `Voting.sol` file to generate `Voting_sol_Voting.bin` and `Voting_sol_Voting.abi` files
+Compile `Voting.sol` file to generate `Voting_sol_Voting.bin` and `Voting_sol_Voting.abi` files
 ```bash
 node_modules/.bin/solcjs --bin --abi Voting.sol
 ```
 
-> Voting_sol_Voting.bin -> compiled bytecode that is deployed to blockchain 
-> Voting_sol_Voting.abi -> tells the user what methods are available in the contract
+> Voting_sol_Voting.bin -> compiled bytecode that is deployed to blockchain
+
+> Voting_sol_Voting.abi -> tells user what methods are available in the contract
 
 
 # Deploy application using web3
@@ -86,4 +87,4 @@ $ node
 
 
 # Reference
-[Medium arcticle](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) by Mahesh Murthy.
+[Medium arcticle](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) by Mahesh Murthy
