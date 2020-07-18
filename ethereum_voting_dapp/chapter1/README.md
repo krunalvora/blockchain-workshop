@@ -41,7 +41,7 @@ node_modules/.bin/ganache-cli
 
 # Install Solidity compiler
 
-https://solidity.readthedocs.io/en/v0.4.24/installing-solidity.html#binary-packages
+https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages
 
 # NodeJS Dapp
 
