@@ -46,14 +46,14 @@ https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packag
 # NodeJS Dapp on Local Blockchain
 
 ```bash
-cd ethereum/voting-dapp/
+cd ethereum/voting-dapp/nodejs
 ```
 
 ## Compile voting contract
 
 Compile `Voting.sol` file to generate `Voting.bin` and `Voting.abi` files
 ```bash
-solc -o ./ --bin --abi Voting.sol
+solc -o ./ --bin --abi ../Voting.sol
 ```
 
 > Voting.bin -> compiled bytecode that is deployed to blockchain
@@ -66,7 +66,8 @@ solc -o ./ --bin --abi Voting.sol
 ```bash
 npm install web3@1.2.6
 ```
-```javascript
+
+```bash
 
 $ node
 
@@ -92,7 +93,6 @@ $ node
   console.log(newContractInstance.options.address)
 });
 
-
 ```
 
 # Interact with the contract through NodeJS console
@@ -106,5 +106,5 @@ $ node
 
 # Interact using a web page
 
-- Update index.js with contract's address (returned by the deploy application code / available in the contract create block on Ganache desktop application)
-- Open `index.html` on your browser
+- Update vonting-dapp.js with contract's address (returned by the deploy application code / available in the contract create block on Ganache desktop application)
+- Open `voting-dapp.html` on your browser
