@@ -1,6 +1,34 @@
-# Using web3.js - Ethereum JavaScript API
+# Table of Contents
+1. [Setting up Ganache in-memory blockchain](#setting-up-Ganache-in-memory-blockchain)
 
-# Compile voting contract
+# Setting up Ganache in-memory blockchain
+
+## Using Ganache desktop application
+
+https://www.trufflesuite.com/ganache
+
+![](https://www.trufflesuite.com/img/ganache-window.png)
+
+
+## Using npm ganache-cli
+```bash
+# Install/update npm to latest version
+sudo npm install -g n
+
+# As of this documentation, `ganache-cli` does not work with Node 14 (https://github.com/trufflesuite/ganache-cli/issues/732)
+# Install Node 13
+sudo n 13.11.0
+
+# Install ganache-cli and web3
+npm install ganache-cli
+
+# Start Ganache in-memory blockchain
+node_modules/.bin/ganache-cli
+```
+
+# NodeJS Dapp
+
+## Compile voting contract
 
 Install solc
 ```bash
@@ -17,7 +45,7 @@ node_modules/.bin/solcjs --bin --abi Voting.sol
 > Voting_sol_Voting.abi -> tells user what methods are available in the contract
 
 
-# Deploy application using web3
+## Deploy application using web3.js - Ethereum JavaScript API
 
 ```bash
 npm install web3@1.2.6
