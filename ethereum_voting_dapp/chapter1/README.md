@@ -47,19 +47,14 @@ https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packag
 
 ## Compile voting contract
 
-Install solc
+Compile `Voting.sol` file to generate `Voting.bin` and `Voting.abi` files
 ```bash
-npm install solc@0.6.4
+solc -o ./ --bin --abi Voting.sol
 ```
 
-Compile `Voting.sol` file to generate `Voting_sol_Voting.bin` and `Voting_sol_Voting.abi` files
-```bash
-node_modules/.bin/solcjs --bin --abi Voting.sol
-```
+> Voting.bin -> compiled bytecode that is deployed to blockchain
 
-> Voting_sol_Voting.bin -> compiled bytecode that is deployed to blockchain
-
-> Voting_sol_Voting.abi -> tells user what methods are available in the contract
+> Voting.abi -> tells user what methods are available in the contract
 
 
 ## Deploy application using web3.js - Ethereum JavaScript API
