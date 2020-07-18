@@ -1,6 +1,7 @@
 # Table of Contents
 1. [Setting up Ganache in-memory blockchain](#setting-up-Ganache-in-memory-blockchain)
     1. [Using Ganache desktop application](#using-ganache-desktop-application)
+    2. [Using docker](#using-docker)
     2. [Using npm ganache-cli](#Using-npm-ganache-cli)
 2. [NodeJS Dapp](#nodejs-dapp)
     1. [Compile voting contract](#Compile-voting-contract)
@@ -16,6 +17,10 @@ https://www.trufflesuite.com/ganache
 
 ![](https://www.trufflesuite.com/img/ganache-window.png)
 
+## Using Docker
+```bash
+docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest
+```
 
 ## Using npm ganache-cli
 ```bash
