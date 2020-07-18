@@ -12,7 +12,7 @@ https://www.trufflesuite.com/ganache
 # Install/update npm to latest version
 sudo npm install -g n
 
-# As of this documentation, `ganache-cli` [does not work with Node 14](https://github.com/trufflesuite/ganache-cli/issues/732)
+# As of this documentation, `ganache-cli` does not work with Node 14 (https://github.com/trufflesuite/ganache-cli/issues/732)
 # Install Node 13
 sudo n 13.11.0
 
