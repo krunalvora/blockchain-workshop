@@ -97,5 +97,5 @@ $ node
 
 # Interact using a web page
 
-- Update index.js with contract's address
+- Update index.js with contract's address (returned by the deploy application code / available in the contract create block on Ganache desktop application)
 - Open `index.html` on your browser
