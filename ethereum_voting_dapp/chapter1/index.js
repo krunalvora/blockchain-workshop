@@ -1,4 +1,4 @@
-web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"))
 var account;
 web3.eth.getAccounts().then((f) => {
  account = f[0];
