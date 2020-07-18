@@ -1,16 +1,16 @@
 # Table of Contents
-1. [Set up Ganache in-memory blockchain](#set-up-Ganache-in-memory-blockchain)
+1. [Set up local (in-memory) blockchain](#set-up-local-in-memory-blockchain)
     1. [Using Ganache desktop application](#using-ganache-desktop-application)
     2. [Using docker](#using-docker)
     2. [Using npm ganache-cli](#Using-npm-ganache-cli)
 2. [Install Solidity compiler](#install-solidity-compiler)
-2. [NodeJS Dapp](#nodejs-dapp)
+2. [NodeJS Dapp on Local Blockchain](#nodejs-dapp-on-local-blockchain)
     1. [Compile voting contract](#Compile-voting-contract)
     2. [Deploy application using web3.js - Ethereum JavaScript API](#Deploy-application-using-web3.js-Ethereum-JavaScript-API)
     3. [Interact with the contract through NodeJS console](#Interact-with-the-contract-through-NodeJS-console)
     4. [Interact using a web page](#Interact-using-a-web-page)
 
-# Set up Ganache in-memory blockchain
+# Set up local (in-memory) blockchain
 
 ## Using Ganache desktop application
 
@@ -43,7 +43,7 @@ node_modules/.bin/ganache-cli
 
 https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages
 
-# NodeJS Dapp
+# NodeJS Dapp on Local Blockchain
 
 ## Compile voting contract
 
