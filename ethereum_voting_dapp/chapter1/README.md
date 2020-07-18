@@ -1,5 +1,6 @@
 # Setting up in-memory blockchain using Ganache
 
+## Using npm ganache-cli
 Install/update npm to latest version
 ```bash
 sudo npm install -g n
@@ -13,7 +14,7 @@ sudo n 13.11.0
 
 Install ganache-cli and web3
 ```bash
-npm install ganache-cli web3@1.2.6
+npm install ganache-cli
 ```
 
 Start Ganache in-memory blockchain
@@ -21,6 +22,13 @@ Start Ganache in-memory blockchain
 node_modules/.bin/ganache-cli
 ```
 This should give 10 accounts to use
+
+## Using Ganache desktop application
+
+https://www.trufflesuite.com/ganache
+
+![](https://www.trufflesuite.com/img/ganache-window.png)
+
 
 
 # Voting Contract
@@ -43,11 +51,14 @@ node_modules/.bin/solcjs --bin --abi Voting.sol
 # Deploy application using web3
 
 ```bash
+npm install web3@1.2.6
+```
+```javascript
 
 $ node
 
 > Web3 = require('web3')
-> web3 = new Web3("http://localhost:8545")
+> web3 = new Web3("http://localhost:7545")  // Use 8545 if you are using ganache-cli
 > web3.eth.getAccounts(console.log)
 # Should list all 10 accounts
 
@@ -73,7 +84,7 @@ $ node
 
 # Interact with the contract through NodeJS console
 
-```bash
+```javascript
 > deployedContract.methods.totalVotesFor(web3.utils.asciiToHex('Puni')).call(console.log)
 > deployedContract.methods.voteForCandidate(web3.utils.asciiToHex('Puni')).send({from: 'YOUR ACCOUNT ADDRESS'}).then((f) => console.log(f))
 > deployedContract.methods.totalVotesFor(web3.utils.asciiToHex('Puni')).call(console.log)
@@ -84,7 +95,3 @@ $ node
 
 - Update index.js with contract's address
 - Open `index.html` on your browser
-
-
-# Reference
-[Medium arcticle](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2) by Mahesh Murthy
