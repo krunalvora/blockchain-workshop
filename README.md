@@ -45,6 +45,10 @@ https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packag
 
 # NodeJS Dapp on Local Blockchain
 
+```bash
+cd ethereum/voting-dapp/
+```
+
 ## Compile voting contract
 
 Compile `Voting.sol` file to generate `Voting.bin` and `Voting.abi` files
