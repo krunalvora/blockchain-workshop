@@ -1,28 +1,5 @@
 # Setting up in-memory blockchain using Ganache
 
-## Using npm ganache-cli
-Install/update npm to latest version
-```bash
-sudo npm install -g n
-```
-
-As of this documentation, `ganache-cli` [does not work with Node 14](https://github.com/trufflesuite/ganache-cli/issues/732)
-```bash
-# Install Node 13
-sudo n 13.11.0
-```
-
-Install ganache-cli and web3
-```bash
-npm install ganache-cli
-```
-
-Start Ganache in-memory blockchain
-```bash
-node_modules/.bin/ganache-cli
-```
-This should give 10 accounts to use
-
 ## Using Ganache desktop application
 
 https://www.trufflesuite.com/ganache
@@ -30,6 +7,21 @@ https://www.trufflesuite.com/ganache
 ![](https://www.trufflesuite.com/img/ganache-window.png)
 
 
+## Using npm ganache-cli
+```bash
+# Install/update npm to latest version
+sudo npm install -g n
+
+# As of this documentation, `ganache-cli` [does not work with Node 14](https://github.com/trufflesuite/ganache-cli/issues/732)
+# Install Node 13
+sudo n 13.11.0
+
+# Install ganache-cli and web3
+npm install ganache-cli
+
+# Start Ganache in-memory blockchain
+node_modules/.bin/ganache-cli
+```
 
 # Voting Contract
 
