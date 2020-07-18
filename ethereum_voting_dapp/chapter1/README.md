@@ -1,5 +1,12 @@
 # Table of Contents
 1. [Setting up Ganache in-memory blockchain](#setting-up-Ganache-in-memory-blockchain)
+    1. [Using Ganache desktop application](#using-ganache-desktop-application)
+    2. [Using npm ganache-cli](#Using-npm-ganache-cli)
+2. [NodeJS Dapp](#nodejs-dapp)
+    1. [Compile voting contract](#Compile-voting-contract)
+    2. [Deploy application using web3.js - Ethereum JavaScript API](#Deploy-application-using-web3.js-Ethereum-JavaScript-API)
+    3. [Interact with the contract through NodeJS console](#Interact-with-the-contract-through-NodeJS-console)
+    4. [Interact using a web page](#Interact-using-a-web-page)
 
 # Setting up Ganache in-memory blockchain
 
